@@ -1,6 +1,7 @@
 # $FreeBSD$
 
-.PATH:  ${SRCTOP}/sys/dev/iwx
+.PATH:  ${.CURDIR}/../../dev/iwx
+CFLAGS+=	-I${.CURDIR}/../..
 
 KMOD=	if_iwx
 SRCS=	if_iwx.c
