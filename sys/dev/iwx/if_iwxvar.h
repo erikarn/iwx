@@ -634,6 +634,10 @@ struct iwx_softc {
 	int sc_newstate_pending;
 	int attached;
 
+	uint32_t		sc_debug;
+	uint32_t		sc_lomark;
+	uint32_t		sc_himark;
+
 	struct task		init_task; /* NB: not reference-counted */
 	//XXX:misha unknown in FreeBSD
 //	struct refcnt		task_refs;
